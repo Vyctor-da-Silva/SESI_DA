@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laboratório de testes e experimentação de tags HTML da TechFair 2026.">
+    <title>TechFair 2026 | Laboratório HTML</title>
+    <style>
+        /* Estilos simples para organizar as caixas do laboratório */
+        .bloco-experimento {
+            border: 1px solid #bbb;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: #fcfcfc;
+            border-radius: 6px;
+        }
+        .codigo-fonte {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-family: monospace;
+            display: block;
+            white-space: pre-wrap;
+            border-left: 4px solid #0000ff;
+            margin: 10px 0;
+        }
+        .area-resultado {
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px dashed #0000ff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <center>
+            <h1>TechFair 2026</h1>
+            <p><em>Formulário Oficial de Credenciamento e Cadastro</em></p>
+        </center>
+        <hr>
+        <nav>
+            <center>
+                <strong>
+                    <a href="index.html">Início</a> | 
+                    <a href="evento.html">O Evento</a> | 
+                    <a href="inscricao.html">Inscrição</a> | 
+                    <a href="laboratorio.html">Laboratório</a>
+                </strong>
+            </center>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Laboratório HTML - Área de Pesquisa e Experimentação</h2>
+        <p>Espaço dedicado ao estudo, análise e aplicação prática de tags nativas do HTML5.</p>
+        <br>
+
+        <div class="bloco-experimento">
+            <h3>Pesquisa 1</h3>
+            <p><strong>Nome da Tag:</strong> <code>&lt;details&gt;</code> e <code>&lt;summary&gt;</code></p>
+            <p><strong>Função:</strong> Cria uma caixa retrátil (tipo "sanfona") interativa. Ela oculta um conteúdo e só o exibe quando o usuário clica no título, sem precisar de JavaScript.</p>
+            
+            <p><strong>Exemplo de Código:</strong></p>
+            <code class="codigo-fonte">&lt;details&gt;
+    &lt;summary&gt;Ver Cronograma do Evento&lt;/summary&gt;
+    &lt;p&gt;09:00 - Abertura dos Portões&lt;/p&gt;
+    &lt;p&gt;10:00 - Palestra de IA e Robótica&lt;/p&gt;
+&lt;/details&gt;</code>
+
+            <p><strong>Resultado Esperado:</strong></p>
+            <div class="area-resultado">
+                <details>
+                    <summary>Ver Cronograma do Evento</summary>
+                    <p>09:00 - Abertura dos Portões</p>
+                    <p>10:00 - Palestra de IA e Robótica</p>
+                </details>
+            </div>
+        </div>
+
+        <div class="bloco-experimento">
+            <h3>Pesquisa 2</h3>
+            <p><strong>Nome da Tag:</strong> <code>&lt;progress&gt;</code></p>
+            <p><strong>Função:</strong> Exibe uma barra de progresso visual nativa do navegador. É usada para mostrar o andamento de um download, preenchimento de perfil ou metas.</p>
+            
+            <p><strong>Exemplo de Código:</strong></p>
+            <code class="codigo-fonte">&lt;label for="barra"&gt;Progresso das Inscrições:&lt;/label&gt;
+&lt;progress id="barra" value="65" max="100"&gt;65%&lt;/progress&gt;</code>
+
+            <p><strong>Resultado Esperado:</strong></p>
+            <div class="area-resultado">
+                <label for="barra">Progresso das Inscrições: </label>
+                <progress id="barra" value="65" max="100">65%</progress> 65%
+            </div>
+        </div>
+
+        <div class="bloco-experimento">
+            <h3>Pesquisa 3</h3>
+            <p><strong>Nome da Tag:</strong> <code>&lt;mark&gt;</code></p>
+            <p><strong>Função:</strong> Destaca um trecho de texto com um fundo colorido (efeito de caneta marca-texto amarela), sendo excelente para dar ênfase visual a termos importantes.</p>
+            
+            <p><strong>Exemplo de Código:</strong></p>
+            <code class="codigo-fonte">Garanta sua vaga no &lt;mark&gt;maior evento de tecnologia&lt;/mark&gt; do ano!</code>
+
+            <p><strong>Resultado Esperado:</strong></p>
+            <div class="area-resultado">
+                Garanta sua vaga no <mark>maior evento de tecnologia</mark> do ano!
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <center>
+            <p><small>&copy; 2026 TechFair Oficial. Todos os recursos de formulários validados nativamente.</small></p>
+        </center>
+    </footer>
+
+</body>
+</html>

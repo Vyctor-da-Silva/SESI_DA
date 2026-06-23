@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça sua inscrição para a TechFair 2026. Garanta sua vaga no maior evento de tecnologia.">
+    <title>TechFair 2026 | Inscrição</title>
+</head>
+<body>
+
+    <header>
+        <center>
+            <h1>TechFair 2026</h1>
+            <p><em>Formulário Oficial de Credenciamento e Cadastro</em></p>
+        </center>
+        <hr>
+        <nav>
+            <center>
+                <strong>
+                    <a href="index.html">Início</a> | 
+                    <a href="evento.html">O Evento</a> | 
+                    <a href="inscricao.html">Inscrição</a> | 
+                    <a href="laboratorio.html">Laboratório</a>
+                </strong>
+            </center>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Sistema de Inscrição para Participantes</h2>
+        <p>Preencha todos os campos abaixo para gerar sua credencial oficial do evento. Os campos marcados com (*) são obrigatórios.</p>
+
+        <form id="formInscricao" action="#" method="POST" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend><strong>Dados Pessoais</strong></legend>
+                <p>
+                    <label for="nome">Nome *:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
+                </p>
+                <p>
+                    <label for="sobrenome">Sobrenome *:</label><br>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                </p>
+                <p>
+                    <label for="cpf">CPF (Somente números) *:</label><br>
+                    <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="00000000000" required>
+                </p>
+                <p>
+                    <label for="nascimento">Data de Nascimento *:</label><br>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </p>
+                <p>
+                    <label for="email">E-mail Corporativo ou Pessoal *:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </p>
+                <p>
+                    <label for="telefone">Telefone / WhatsApp *:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" required>
+                </p>
+                <p>
+                    <label for="senha">Crie uma senha de acesso ao portal do participante:</label><br>
+                    <input type="password" id="senha" name="senha" placeholder="Digite uma senha forte">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><strong>Dados Profissionais</strong></legend>
+                <p>
+                    <label for="empresa">Empresa / Instituição de Ensino *:</label><br>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa ou faculdade" required>
+                </p>
+                <p>
+                    <label for="cargo">Cargo Atual *:</label><br>
+                    <input type="text" id="cargo" name="cargo" placeholder="Ex: Desenvolvedor, Estudante, Diretor" required>
+                </p>
+                <p>
+                    <label for="atuacao">Área de Atuação *:</label><br>
+                    <select id="atuacao" name="atuacao" required>
+                        <option value="">-- Selecione uma área --</option>
+                        <option value="desenvolvimento">Desenvolvimento de Software</option>
+                        <option value="dados">Ciência de Dados e IA</option>
+                        <option value="seguranca">Segurança da Informação</option>
+                        <option value="infraestrutura">Infraestrutura e Cloud</option>
+                        <option value="design">Design de Produto e UX/UI</option>
+                        <option value="gestao">Gestão de Projetos e Negócios</option>
+                        <option value="estudante">Estudante / Acadêmico</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="linkedin">URL do seu perfil no LinkedIn:</label><br>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/seu-usuario">
+                </p>
+                <p>
+                    <label for="curriculo">Upload de Currículo (Para a Feira de Talentos):</label><br>
+                    <input type="file" id="curriculo" name="curriculo">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><strong>Opções de Participação</strong></legend>
+                
+                <p>
+                    <strong>Selecione os dias que você irá comparecer:</strong><br>
+                    <input type="checkbox" id="dia1" name="dias_evento" value="15-out">
+                    <label for="dia1">15/10 - Abertura e Tendências Globais</label><br>
+                    
+                    <input type="checkbox" id="dia2" name="dias_evento" value="16-out">
+                    <label for="dia2">16/10 - Desenvolvimento e Web3</label><br>
+                    
+                    <input type="checkbox" id="dia3" name="dias_evento" value="17-out">
+                    <label for="dia3">17/10 - Infraestrutura e Dados</label><br>
+                    
+                    <input type="checkbox" id="dia4" name="dias_evento" value="18-out">
+                    <label for="dia4">18/10 - Encerramento e Premiações</label><br>
+                </p>
+
+                <p>
+                    <strong>Possui alguma restrição ou necessidade de alimentação especial?</strong><br>
+                    <input type="radio" id="alimentacao_nenhuma" name="alimentacao" value="nenhuma" checked>
+                    <label for="alimentacao_nenhuma">Não possuo restrições (Alimentação padrão)</label><br>
+                    
+                    <input type="radio" id="alimentacao_vegetariano" name="alimentacao" value="vegetariano">
+                    <label for="alimentacao_vegetariano">Vegetariana</label><br>
+                    
+                    <input type="radio" id="alimentacao_vegano" name="alimentacao" value="vegano">
+                    <label for="alimentacao_vegano">Vegana</label><br>
+                    
+                    <input type="radio" id="alimentacao_alergico" name="alimentacao" value="alergico">
+                    <label for="alimentacao_alergico">Alérgico (Glúten / Lactose)</label>
+                </p>
+
+                <p>
+                    <label for="interesse">Descreva brevemente suas principais trilhas de interesse e o que espera do evento:</label><br>
+                    <textarea id="interesse" name="interesse" rows="4" cols="50" placeholder="Ex: Tenho muito interesse nas palestras sobre IA generativa..."></textarea>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><strong>Preferências de customização da credencial (Desafio de Inputs)</strong></legend>
+                <p>
+                    <label for="quantidade_ingressos">Quantidade de convites adicionais para acompanhantes (Máximo 5):</label><br>
+                    <input type="number" id="quantidade_ingressos" name="quantidade_ingressos" min="0" max="5" value="0">
+                </p>
+                <p>
+                    <label for="cor_credencial">Escolha a cor de destaque do cordão da sua credencial digital:</label><br>
+                    <input type="color" id="cor_credencial" name="cor_credencial" value="#0000ff">
+                </p>
+                <p>
+                    <label for="nivel_conhecimento">Selecione seu nível de conhecimento técnico estimado em tecnologia de 1 a 10:</label><br>
+                    1 <input type="range" id="nivel_conhecimento" name="nivel_conhecimento" min="1" max="10" value="5"> 10
+                </p>
+            </fieldset>
+
+            <br>
+
+            <center>
+                <button type="reset">Limpar Formulário</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit"><strong>Finalizar Minha Inscrição</strong></button>
+            </center>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <center>
+            <p><small>&copy; 2026 TechFair Oficial. Todos os recursos de formulários validados nativamente.</small></p>
+        </center>
+    </footer>
+
+    <script>
+        document.getElementById('formInscricao').addEventListener('submit', function(event) {
+            // Impede o recarregamento instantâneo da página para podermos injetar a mensagem
+            event.preventDefault(); 
+            
+            // Localiza a tag <main> e substitui todo o formulário pelo bloco abaixo
+            const mainSection = document.querySelector('main');
+            mainSection.innerHTML = `
+                <div style="text-align: center; padding: 40px; border: 2px solid #0000ff; background-color: #f0f4ff; margin-top: 20px; font-family: sans-serif; border-radius: 8px;">
+                    <h2 style="color: #0000ff; margin-top: 0;">🎉 Inscrição Finalizada com Sucesso!</h2>
+                    <p>Obrigado por se inscrever na <strong>TechFair 2026</strong>.</p>
+                    <p>Sua credencial oficial e as instruções de acesso foram enviadas para o e-mail cadastrado.</p>
+                    <br><br>
+                    <a href="index.html" style="text-decoration: none; font-weight: bold; color: #0000ff; border: 1px solid #0000ff; padding: 10px 20px; border-radius: 4px; background-color: #fff;">Voltar para o Início</a>
+                </div>
+            `;
+        });
+    </script>
+
+</body>
+</html>
