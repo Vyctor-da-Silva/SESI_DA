@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV - Login Pet Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Lado Esquerdo */
+        .left-side {
+            flex: 1;
+            position: relative;
+            background-color: #e5e5e5;
+        }
+
+        .left-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000000;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Lado Direito */
+        .right-side {
+            flex: 1.1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            background-color: #ffffff;
+        }
+
+        .right-side h2 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 1.25;
+            max-width: 540px;
+            margin-bottom: 50px;
+            color: #000000;
+            text-align: center;
+        }
+
+        /* Botões de Login */
+        .button-group {
+            width: 100%;
+            max-width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 16px;
+            border: 1px solid #000000;
+            border-radius: 30px;
+            background: transparent;
+            font-size: 0.95rem;
+            color: #000000;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 24px;
+        }
+
+        .alternative-text {
+            font-size: 0.85rem;
+            color: #000000;
+            margin-top: 8px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .alternative-text a {
+            color: #4477ff;
+            text-decoration: none;
+        }
+
+        /* Botão Principal */
+        .submit-btn {
+            width: 100%;
+            max-width: 380px;
+            padding: 16px;
+            border: none;
+            border-radius: 30px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* Responsividade para ecrãs pequenos */
+        @media (max-width: 900px) {
+            .login-container {
+                flex-direction: column;
+                height: auto;
+                min-height: 100vh;
+            }
+            .left-side {
+                height: 45vh;
+                flex: none;
+            }
+            .right-side {
+                padding: 40px 20px;
+                flex: none;
+            }
+            .welcome-text {
+                top: 10%;
+                font-size: 2.5rem;
+            }
+            .right-side h2 {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            .alternative-text {
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <!-- Lado Esquerdo -->
+        <div class="left-side">
+            <h1 class="welcome-text">Bem-Vindo</h1>
+            <!-- Imagem de um cão pug de alta qualidade integrada -->
+            <img src="pug.png" alt="Pug">
+        </div>
+
+        <!-- Lado Direito -->
+        <div class="right-side">
+            <h2>Encontre tudo o que você precisa para seu animal de estimação</h2>
+
+            <div class="button-group">
+                <!-- Botão Google -->
+                <div class="social-btn">
+                    <img src="google.png" alt="Google">
+                    Entrar com Google
+                </div>
+
+                <!-- Botão Apple -->
+                <div class="social-btn">
+                    <img src="apple.png" alt="Apple">
+                    Entrar com Apple
+                </div>
+
+                <!-- Botão E-mail -->
+                <div class="social-btn">
+                    <img src="email.png" alt="E-mail">
+                    Entratr com E-mail
+                </div>
+
+                <p class="alternative-text">Você quer tentar de outra maneira? <a href="#">Saber mais</a></p>
+
+                <!-- Botão Vamos lá -->
+                <div class="submit-btn">Vamos lá</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
