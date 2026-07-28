@@ -20,51 +20,52 @@
             min-height: 100vh;
         }
 
-        .login-container {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            background-color: #ffffff;
-            overflow: hidden;
-        }
+    .login-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+}
 
-        /* Lado Esquerdo */
-        .left-side {
-            flex: 1;
-            position: relative;
-            background-color: #e5e5e5;
-        }
-        ,
+    .left-side {
+        width: 40%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background-color: #e5e5e5;
+}
 
-        .left-side img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+    .left-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+}
 
-        .welcome-text {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 3rem;
-            font-weight: 700;
-            color: #000000;
-            text-align: center;
-            white-space: nowrap;
-        }
+    .welcome-text {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        font-weight: 700;
+        color: #000;
+        z-index: 10;
+}
 
-        /* Lado Direito */
-        .right-side {
-            flex: 1.1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 60px;
-            background-color: #ffffff;
-        }
+    .right-side {
+        width: 60%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 60px;
+        background: #fff;
+}
 
         .right-side h2 {
             font-size: 2.3rem;
@@ -76,7 +77,7 @@
             text-align: center;
         }
 
-        /* Botões de Login */
+
         .button-group {
             width: 100%;
             max-width: 380px;
@@ -96,9 +97,16 @@
             border-radius: 30px;
             background: transparent;
             font-size: 0.95rem;
-            color: #000000;
+            color: black;
             text-decoration: none;
             position: relative;
+            cursor: pointer;
+        }
+
+        .social-btn:hover{
+            background-color: aqua;
+            color: #000;
+            border: 2px solid black;
         }
 
         .social-btn img {
@@ -121,7 +129,7 @@
             text-decoration: none;
         }
 
-        /* Botão Principal */
+
         .submit-btn {
             width: 100%;
             max-width: 380px;
@@ -136,7 +144,7 @@
             text-decoration: none;
         }
 
-        /* Responsividade para ecrãs pequenos */
+
         @media (max-width: 900px) {
             .login-container {
                 flex-direction: column;
@@ -162,6 +170,25 @@
             .alternative-text {
                 margin-bottom: 40px;
             }
+        }
+
+        .botao {
+            font-size: 18px;
+            border: none;
+            background-color: #000;
+            color: white;
+            margin-top: 10px;
+            transition: 1.5s ease;
+            cursor: pointer;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;    
+        }
+
+        .botao:hover{
+            background-color: white;
+            color: #000;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -202,7 +229,8 @@
                 <p class="alternative-text">Você quer tentar de outra maneira? <a href="#">Saber mais</a></p>
 
                 <!-- Botão Vamos lá -->
-                <div class="submit-btn">Vamos lá</div>
+                <a href="home.html">
+                    <button class="botao ">Vamos lá</button></a>
             </div>
         </div>
 
