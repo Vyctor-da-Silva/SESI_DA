@@ -1,57 +1,43 @@
-.parte-cima {
-    flex: 1;
+body{
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: black;
-    height: 120px;
-    margin-top: 0px;
-    padding: 10px;
-    position: relative;
-
+    height: 100px;
+    width: 100%;
+    color: white;
 }
 
-.pfp{
-width: 90px;
-height: 90px;
-margin-left: 2%;
-margin-top: 17px;
-border-radius: 100%;
+#perfil{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
 }
 
-.text {
-     position: absolute;   
-    top: 45%; /* Ajuste a porcentagem para subir ou descer */
-    left: 50%;            
-    transform: translate(-50%, -50%); 
-    color: white;         
-    margin: 0;
+header p {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-size: bold;
 }
 
-.text2 {
- position: absolute;   
-    top: 45%;
-    left: 95%;            
-    transform: translate(-50%, -50%); 
-    color: white;         
-    margin: 0;
-    font-family: "Ballet", cursive;
-    font-size: 50px;
-}
-
-.pesquisar {
+.pesquisa{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-}
-
-.pesquisar input {
-    width: 400px;
     height: 70px;
-    border-radius: 40px;
-    text-align: left;
-    border: 2px solid black ;
-    font-size: 30px;
-    padding-left: 10px;
+    margin: 20px;
 }
 
+.pesquisa input{
+    width: 700px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding-left: 30px;
+}
 
 .botoes {
 display: flex;
@@ -67,7 +53,7 @@ margin: 50px;
     display: inline-block;
      width: 170px;
     height: 250px;
-    background-image: url(gato.jpg) ;
+    background-image: url(gato.jpg)  ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +69,7 @@ margin: 50px;
     display: inline-block;
      width: 170px;
     height: 250px;
-    background-image:  url(cachorro.jpg) ;
+    background-image: url(cachorro.jpg)  ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -151,6 +137,84 @@ transform: scale(1.1);
   filter: brightness(1.1);
 }
 
+
+.grupo-anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 430px;
+    margin-top: 50px;
+}
+
+.card-anuncio{
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.anuncio-le{
+    width: 50%;
+    text-align: center;
+}
+
+.anuncio-le p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.anuncio-le button{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.anuncio-ld{
+    width: 50%;
+    height: 80%;
+    background-image: url('gato_laranja.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 70px;
+    margin: 20px;
+}
+.grupo-dicas{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.dicas-le{
+    width: 50%;
+}
+
+.dicas-le h1{
+    font-size: 41px;
+    font-weight: bold;
+}
+
+.dicas-le p{
+    font-size: 28px;
+    color: #5c5c5c;
+}
+
+.dicas-le span{
+    font-weight: bold;
+}
+
+.dicas-ld img{
+    width: 684px;
+    height: 800px;
+    border-radius: 20px;
+}
+
 .textos {
     position: absolute;
     left: 5px;
@@ -158,64 +222,40 @@ transform: scale(1.1);
     margin: 0px;
 }
 
-.parte-baixo {
-    flex: 1 ;
+
+footer{
     background-color: black;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parte-interna {
-    flex: 1;
-    background-color: white;
-    width: 50%;
-    height: 70%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.textoz {
-  flex-direction: column;
-      display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gato {
-        width: 40%;
-        height: 80%;
-        background-image:url(gato_laranja.jpg) ;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        margin-right: 25px;
-}
-
-.textt {
-margin-right: 65px;
-margin-left: 50px;
-margin-bottom: 20px;
-}
-
-.button {
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-    background-color: black;
+    text-align: center;
     color: white;
-    margin-bottom: 60px;
-    font-size: 20px
 }
 
-.button:hover {
-    transition: 1s;
-    color: rgb(5, 5, 5);
-    background-color: aliceblue;
-    cursor: pointer;
+footer h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grupo-assinar{
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo-assinar input{
+    height: 50px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+}
+
+.grupo-assinar button{
+    height: 51px;
+    width: 200px;
+    background-color: #EBC154;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
 }
