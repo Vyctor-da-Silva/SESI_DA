@@ -1,0 +1,166 @@
+Texto
+* {
+
+ box-sizing: border-box;
+
+ margin: 0;
+
+ padding: 0;
+
+}
+
+
+
+body {
+
+ font-family: Arial, sans-serif;
+
+ background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+
+ min-height: 100vh;
+
+ padding: 20px;
+
+}
+
+
+
+.container {
+
+ max-width: 600px;
+
+ margin: 0 auto;
+
+}
+
+
+
+h1 {
+
+ text-align: center;
+
+ color: white;
+
+ margin-bottom: 20px;
+
+}
+
+
+
+.formulario,
+
+.entrada {
+
+ background: white;
+
+ padding: 20px;
+
+ border-radius: 12px;
+
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+ margin-bottom: 20px;
+
+}
+
+
+
+input,
+
+textarea {
+
+ width: 100%;
+
+ padding: 10px;
+
+ margin-bottom: 10px;
+
+ border: 1px solid #ccc;
+
+ border-radius: 8px;
+
+ font-size: 16px;
+
+ font-family: inherit;
+
+}
+
+
+
+textarea {
+
+ height: 120px;
+
+ resize: none;
+
+}
+
+
+
+button {
+
+ background: #7b5cd6;
+
+ color: white;
+
+ border: none;
+
+ padding: 10px 20px;
+
+ border-radius: 8px;
+
+ font-size: 16px;
+
+ cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+ background: #6544c0;
+
+}
+
+
+
+.entrada h3 {
+
+ color: #7b5cd6;
+
+ margin-bottom: 5px;
+
+}
+
+.entrada small {
+
+ color: #888;
+
+}
+
+.entrada p {
+
+ margin: 10px 0;
+
+ white-space: pre-wrap;
+
+}
+
+.entrada button {
+
+ background: #e05a5a;
+
+ padding: 6px 12px;
+
+ font-size: 14px;
+
+}
+
+.vazio {
+
+ text-align: center;
+
+ color: white;
+
+}
